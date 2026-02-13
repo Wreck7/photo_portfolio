@@ -19,25 +19,27 @@ const PHOTOGRAPHER_BIO = [
   "My work has been featured in Architectural Digest, Vogue, and numerous international publications. But beyond the accolades, what drives me is the pursuit of that perfect moment when everything aligns—when light meets subject, and magic happens."
 ];
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1698903233116-5f3312733320?w=1920&q=80';
+const HERO_IMAGE = "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg"
 const ABOUT_IMAGE = 'https://images.unsplash.com/photo-1609748629050-129797b86431?w=800&q=80';
 
 const ARCHITECTURE_IMAGES = [
-  { id: 1, url: 'https://images.unsplash.com/photo-1698903233116-5f3312733320?w=800&q=80', title: 'Geometric Shadows', location: 'Barcelona, Spain' },
-  { id: 2, url: 'https://images.unsplash.com/photo-1622746908635-b825a84939e4?w=800&q=80', title: 'Urban Minimalism', location: 'Tokyo, Japan' },
-  { id: 3, url: 'https://images.unsplash.com/photo-1651312251132-20252bf995a8?w=800&q=80', title: 'Twilight Horizons', location: 'Dubai, UAE' },
-  { id: 4, url: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80', title: 'Steel & Glass', location: 'New York, USA' },
-  { id: 5, url: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80', title: 'Sacred Geometry', location: 'Paris, France' },
-  { id: 6, url: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&q=80', title: 'Concrete Dreams', location: 'London, UK' }
+  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg', title: 'Geometric Shadows', location: 'Barcelona, Spain' },
+  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg', title: 'Urban Minimalism', location: 'Tokyo, Japan' },
+  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg', title: 'Twilight Horizons', location: 'Dubai, UAE' },
+  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg', title: 'Steel & Glass', location: 'New York, USA' },
+  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg', title: 'Sacred Geometry', location: 'Paris, France' },
+  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg', title: 'Concrete Dreams', location: 'London, UK' },
+  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg', title: 'Steel & Glass', location: 'New York, USA' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'Sacred Geometry', location: 'Paris, France' }
 ];
 
 const PORTRAIT_IMAGES = [
   { id: 1, url: 'https://images.unsplash.com/photo-1544124094-8aea0374da93?w=800&q=80', title: 'Serene Grace', subject: 'Editorial Portrait' },
   { id: 2, url: 'https://images.unsplash.com/photo-1606143412458-acc5f86de897?w=800&q=80', title: 'Studio Light', subject: 'Fashion Portrait' },
+  { id: 6, url: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80', title: 'Golden Hour', subject: 'Outdoor Portrait' },
   { id: 3, url: 'https://images.unsplash.com/photo-1563170446-9c3c0622d8a9?w=800&q=80', title: 'Azure Depths', subject: 'Beauty Portrait' },
   { id: 4, url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80', title: 'Raw Character', subject: 'Character Study' },
   { id: 5, url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80', title: 'Natural Beauty', subject: 'Lifestyle Portrait' },
-  { id: 6, url: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80', title: 'Golden Hour', subject: 'Outdoor Portrait' }
 ];
 
 const FOOD_IMAGES = [
@@ -46,7 +48,10 @@ const FOOD_IMAGES = [
   { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/5.jpg', title: 'Culinary Canvas', cuisine: 'Modern Fusion' },
   { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/10.jpg', title: 'Garden Fresh', cuisine: 'Farm to Table' },
   { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/2.jpg', title: 'Artisan Craft', cuisine: 'Artisan Pizza' },
-  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' }
+  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
+  { id: 7, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
+  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/8.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
 ];
 
 const STATS_DATA = [
