@@ -51,7 +51,7 @@ const FOOD_IMAGES = [
   { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
   { id: 7, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
   { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/8.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/11.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
 ];
 
 const STATS_DATA = [
