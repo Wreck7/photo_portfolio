@@ -34,12 +34,11 @@ const ARCHITECTURE_IMAGES = [
 ];
 
 const PORTRAIT_IMAGES = [
-  { id: 1, url: 'https://images.unsplash.com/photo-1544124094-8aea0374da93?w=800&q=80', title: 'Serene Grace', subject: 'Editorial Portrait' },
-  { id: 2, url: 'https://images.unsplash.com/photo-1606143412458-acc5f86de897?w=800&q=80', title: 'Studio Light', subject: 'Fashion Portrait' },
-  { id: 6, url: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80', title: 'Golden Hour', subject: 'Outdoor Portrait' },
-  { id: 3, url: 'https://images.unsplash.com/photo-1563170446-9c3c0622d8a9?w=800&q=80', title: 'Azure Depths', subject: 'Beauty Portrait' },
-  { id: 4, url: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80', title: 'Raw Character', subject: 'Character Study' },
-  { id: 5, url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80', title: 'Natural Beauty', subject: 'Lifestyle Portrait' },
+  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg', title: 'Studio Light', subject: 'Fashion Portrait' },
+  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/1.jpg', title: 'Serene Grace', subject: 'Editorial Portrait' },
+  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/4.jpg', title: 'Azure Depths', subject: 'Beauty Portrait' },
+  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/5.jpg', title: 'Raw Character', subject: 'Character Study' },
+  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg', title: 'Golden Hour', subject: 'Outdoor Portrait' },
 ];
 
 const FOOD_IMAGES = [
