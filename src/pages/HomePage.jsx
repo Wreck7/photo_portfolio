@@ -20,7 +20,7 @@ const PHOTOGRAPHER_BIO = [
 ];
 
 const HERO_IMAGE = "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg"
-const ABOUT_IMAGE = 'https://images.unsplash.com/photo-1609748629050-129797b86431?w=800&q=80';
+const ABOUT_IMAGE = 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/vishnu_pic.jpeg';
 
 const ARCHITECTURE_IMAGES = [
   { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg', title: 'Geometric Shadows', location: 'Barcelona, Spain' },
