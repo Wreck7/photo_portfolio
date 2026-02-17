@@ -82,14 +82,14 @@ function GridItem({ image, metaKey, onHoverStart, onHoverEnd }) {
   );
 }
 
-function StatItem({ number, label }) {
-  return (
-    <div className="stat-item">
-      <div className="stat-number">{number}</div>
-      <div className="stat-label">{label}</div>
-    </div>
-  );
-}
+// function StatItem({ number, label }) {
+//   return (
+//     <div className="stat-item">
+//       <div className="stat-number">{number}</div>
+//       <div className="stat-label">{label}</div>
+//     </div>
+//   );
+// }
 
 function TestimonialCard({ quote, author, role }) {
   return (
@@ -315,13 +315,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="stats-section" ref={statsRef}>
+      {/* <section className="stats-section" ref={statsRef}>
         <div className="stats-grid">
           {STATS_DATA.map((stat, i) => (
             <StatItem key={i} number={stat.number} label={stat.label} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="testimonials-section" ref={testRef}>
         <div className="testimonials-header">
