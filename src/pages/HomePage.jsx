@@ -91,15 +91,15 @@ function GridItem({ image, metaKey, onHoverStart, onHoverEnd }) {
 //   );
 // }
 
-function TestimonialCard({ quote, author, role }) {
-  return (
-    <div className="testimonial-card">
-      <p className="testimonial-quote">"{quote}"</p>
-      <p className="testimonial-author">{author}</p>
-      <p className="testimonial-role">{role}</p>
-    </div>
-  );
-}
+// function TestimonialCard({ quote, author, role }) {
+//   return (
+//     <div className="testimonial-card">
+//       <p className="testimonial-quote">"{quote}"</p>
+//       <p className="testimonial-author">{author}</p>
+//       <p className="testimonial-role">{role}</p>
+//     </div>
+//   );
+// }
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -323,7 +323,7 @@ export default function HomePage() {
         </div>
       </section> */}
 
-      <section className="testimonials-section" ref={testRef}>
+      {/* <section className="testimonials-section" ref={testRef}>
         <div className="testimonials-header">
           <h2 className="testimonials-title">Words from Collaborators</h2>
         </div>
@@ -332,7 +332,7 @@ export default function HomePage() {
             <TestimonialCard key={i} quote={t.quote} author={t.author} role={t.role} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       <section className="contact-section" id="contact" ref={contactRef}>
         <div className="contact-spotlight" />
