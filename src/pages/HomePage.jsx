@@ -349,10 +349,12 @@ export default function HomePage() {
               <p className="contact-detail-label">Location</p>
               <p className="contact-detail-value">{PHOTOGRAPHER_LOCATION}</p>
             </div>
-            <div className="contact-detail">
+            <a href="https://www.instagram.com/vb_photozz/" target='_blank' className='anchor'>
+              <div className="contact-detail">
               <p className="contact-detail-label">Instagram</p>
               <p className="contact-detail-value">{PHOTOGRAPHER_INSTAGRAM}</p>
             </div>
+            </a>
           </div>
           <a
             href={`mailto:${PHOTOGRAPHER_EMAIL}`}

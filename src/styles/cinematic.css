@@ -710,6 +710,12 @@
   transform: translateX(4px);
 }
 
+.anchor {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 /* Footer */
 .footer-cinematic {
   padding: 4rem;
