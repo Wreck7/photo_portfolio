@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger);
 // Data defined directly in component file (same as original)
 const PHOTOGRAPHER_NAME = 'Vishnu';
 const PHOTOGRAPHER_TAGLINE = 'Capturing spaces, faces, and flavors.';
-const PHOTOGRAPHER_EMAIL = 'hello@vishnuphotography.com';
+const PHOTOGRAPHER_EMAIL = 'gandhamvishnu296@gmail.com';
 const PHOTOGRAPHER_PHONE = '+1 (555) 123-4567';
-const PHOTOGRAPHER_INSTAGRAM = '@vishnu.lens';
+const PHOTOGRAPHER_INSTAGRAM = '@vb_photozz';
 const PHOTOGRAPHER_LOCATION = 'Los Angeles, California';
 const PHOTOGRAPHER_BIO = [
   "With over a decade of experience behind the lens, I've dedicated my career to capturing the extraordinary in the ordinary. My journey began in the narrow streets of old cities, where I learned that every corner holds a story waiting to be told.",
@@ -359,6 +359,7 @@ export default function HomePage() {
           <a
             href={`mailto:${PHOTOGRAPHER_EMAIL}`}
             className="contact-cta"
+            onClick={(e) => e.stopPropagation()}
             onMouseEnter={handleHoverStart}
             onMouseLeave={handleHoverEnd}
           >
