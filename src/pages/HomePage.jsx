@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const PHOTOGRAPHER_NAME = 'Vishnu';
 const PHOTOGRAPHER_TAGLINE = 'Capturing spaces, faces, and flavors.';
 const PHOTOGRAPHER_EMAIL = 'gandhamvishnu296@gmail.com';
-const PHOTOGRAPHER_PHONE = '+1 (555) 123-4567';
+const PHOTOGRAPHER_PHONE = '+91 96762 38293';
 const PHOTOGRAPHER_INSTAGRAM = '@vb_photozz';
 const PHOTOGRAPHER_LOCATION = 'Los Angeles, California';
 const PHOTOGRAPHER_BIO = [
