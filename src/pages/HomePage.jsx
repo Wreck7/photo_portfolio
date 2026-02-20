@@ -12,7 +12,7 @@ const PHOTOGRAPHER_TAGLINE = 'Capturing spaces, faces, and flavors.';
 const PHOTOGRAPHER_EMAIL = 'gandhamvishnu296@gmail.com';
 const PHOTOGRAPHER_PHONE = '+91 96762 38293';
 const PHOTOGRAPHER_INSTAGRAM = '@vb_photozz';
-const PHOTOGRAPHER_LOCATION = 'Los Angeles, California';
+const PHOTOGRAPHER_LOCATION = 'Hyderabad, Telangana';
 const PHOTOGRAPHER_BIO = [
   "With over a decade of experience behind the lens, I've dedicated my career to capturing the extraordinary in the ordinary. My journey began in the narrow streets of old cities, where I learned that every corner holds a story waiting to be told.",
   "I specialize in three distinct worlds: the geometric poetry of architecture, the raw emotion of human portraits, and the sensory art of culinary photography. Each frame I capture is a meditation on light, shadow, and the fleeting moments that define our existence.",
