@@ -23,14 +23,14 @@ const HERO_IMAGE = "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_image
 const ABOUT_IMAGE = 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/vishnu_pic.jpeg';
 
 const ARCHITECTURE_IMAGES = [
-  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg', title: 'Geometric Shadows', location: 'Barcelona, Spain' },
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg', title: 'Urban Minimalism', location: 'Tokyo, Japan' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg', title: 'Twilight Horizons', location: 'Dubai, UAE' },
-  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg', title: 'Steel & Glass', location: 'New York, USA' },
-  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg', title: 'Sacred Geometry', location: 'Paris, France' },
-  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg', title: 'Concrete Dreams', location: 'London, UK' },
-  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg', title: 'Steel & Glass', location: 'New York, USA' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'Sacred Geometry', location: 'Paris, France' }
+  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg', title: 'Timber & Tone', location: 'Hyderabad, India' },
+  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg', title: 'Urban Minimalism', location: 'Hyderabad, India' },
+  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg', title: 'NatureCraft Interiors', location: 'Hyderabad, India' },
+  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg', title: 'Brick & White', location: 'Hyderabad, India' },
+  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg', title: 'Lofted in White', location: 'Hyderabad, India' },
+  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg', title: 'Concrete Dreams', location: 'Hyderabad, India' },
+  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg', title: 'Steel & Glass', location: 'Hyderabad, India' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'The Teak Atelier', location: 'Hyderabad, India' }
 ];
 
 const PORTRAIT_IMAGES = [
