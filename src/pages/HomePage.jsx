@@ -34,11 +34,11 @@ const ARCHITECTURE_IMAGES = [
 ];
 
 const PORTRAIT_IMAGES = [
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg', title: 'Studio Light', subject: 'Fashion Portrait' },
+  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg', title: 'Studio Light', subject: 'Iron Physique' },
   { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/1.jpg', title: 'Serene Grace', subject: 'Editorial Portrait' },
   { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/4.jpg', title: 'Azure Depths', subject: 'Beauty Portrait' },
   { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/5.jpg', title: 'Raw Character', subject: 'Character Study' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg', title: 'Golden Hour', subject: 'Outdoor Portrait' },
+  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg', title: 'Golden Hour', subject: 'Soft Neutrals' },
 ];
 
 const FOOD_IMAGES = [
