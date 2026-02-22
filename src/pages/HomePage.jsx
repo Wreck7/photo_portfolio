@@ -14,9 +14,9 @@ const PHOTOGRAPHER_PHONE = '+91 96762 38293';
 const PHOTOGRAPHER_INSTAGRAM = '@vb_photozz';
 const PHOTOGRAPHER_LOCATION = 'Hyderabad, Telangana';
 const PHOTOGRAPHER_BIO = [
-  "With over a decade of experience behind the lens, I've dedicated my career to capturing the extraordinary in the ordinary. My journey began in the narrow streets of old cities, where I learned that every corner holds a story waiting to be told.",
+  "With over three years of experience behind the lens, I've dedicated my career to capturing the extraordinary in the ordinary. My journey began in the narrow streets of old cities, where I learned that every corner holds a story waiting to be told.",
   "I specialize in three distinct worlds: the geometric poetry of architecture, the raw emotion of human portraits, and the sensory art of culinary photography. Each frame I capture is a meditation on light, shadow, and the fleeting moments that define our existence.",
-  "My work has been featured in Architectural Digest, Vogue, and numerous international publications. But beyond the accolades, what drives me is the pursuit of that perfect moment when everything aligns—when light meets subject, and magic happens."
+  "Over the years, my work has been shared on various creative platforms, but what truly matters to me isn’t the recognition it’s the process. I’m constantly chasing that moment when everything feels right, when light, subject, and emotion come together naturally to tell a story that feels real and timeless."
 ];
 
 const HERO_IMAGE = "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg"
@@ -371,11 +371,11 @@ export default function HomePage() {
       <footer className="footer-cinematic">
         <div className="footer-content">
           <div className="footer-logo">VISHNU</div>
-          <p className="footer-copyright">© 2025 Vishnu Photography. All rights reserved.</p>
+          <p className="footer-copyright">© 2026 Vishnu Photography. All rights reserved.</p>
           <div className="footer-social">
-            <a href="#">Instagram</a>
-            <a href="#">Behance</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.instagram.com/vb_photozz/" target='_blank'>Instagram</a>
+            <a href="#" target='_blank'>Behance</a>
+            {/* <a href="#">LinkedIn</a> */}
           </div>
         </div>
       </footer>
