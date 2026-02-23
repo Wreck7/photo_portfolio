@@ -374,7 +374,7 @@ export default function HomePage() {
           <p className="footer-copyright">© 2026 Vishnu Photography. All rights reserved.</p>
           <div className="footer-social">
             <a href="https://www.instagram.com/vb_photozz/" target='_blank'>Instagram</a>
-            <a href="#" target='_blank'>Behance</a>
+            <a href="https://www.behance.net/vbphotography1" target='_blank'>Behance</a>
             {/* <a href="#">LinkedIn</a> */}
           </div>
         </div>
