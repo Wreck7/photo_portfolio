@@ -385,10 +385,11 @@
 /* About Section */
 .about-section {
   position: relative;
-  min-height: 100vh;
-  padding: 10rem 4rem;
+  min-height: 80vh;
+  padding: 8rem 4rem 2rem 4rem;
   display: flex;
   align-items: center;
+  z-index: 10;
   background: var(--color-dark);
 }
 
@@ -787,7 +788,13 @@
     grid-row: span 1;
   }
   
+.about-section {
+  padding: 8rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
   .about-container {
+
     grid-template-columns: 1fr;
     gap: 4rem;
   }
