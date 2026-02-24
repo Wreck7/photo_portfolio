@@ -30,7 +30,8 @@ const ARCHITECTURE_IMAGES = [
   { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg', title: 'Lofted in White', location: 'Hyderabad, India' },
   { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg', title: 'Concrete Dreams', location: 'Hyderabad, India' },
   { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg', title: 'Steel & Glass', location: 'Hyderabad, India' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'The Teak Atelier', location: 'Hyderabad, India' }
+  { id: 10, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/7.jpg', title: 'Charcoal Brick Haven', location: 'Hyderabad, India' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'The Teak Atelier', location: 'Hyderabad, India' },
 ];
 
 const PORTRAIT_IMAGES = [
