@@ -614,6 +614,7 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
+  z-index: 200;
   margin-bottom: 4rem;
   opacity: 0;
 }
@@ -676,6 +677,7 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
+  z-index: 200;
   overflow: hidden;
   opacity: 0;
   transition: color 0.4s, border-color 0.4s;

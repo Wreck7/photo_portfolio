@@ -340,7 +340,7 @@ export default function HomePage() {
         <div className="contact-container contact-content">
           <span className="contact-label">Get in Touch</span>
           <h2 className="contact-title">Let&apos;s Create<br />Something Beautiful</h2>
-          <a href={`mailto:${PHOTOGRAPHER_EMAIL}`} className="contact-email">{PHOTOGRAPHER_EMAIL}</a>
+          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PHOTOGRAPHER_EMAIL}`} target='_blank' className="contact-email">{PHOTOGRAPHER_EMAIL}</a>
           <div className="contact-details">
             <div className="contact-detail">
               <p className="contact-detail-label">Phone</p>
@@ -358,8 +358,9 @@ export default function HomePage() {
             </a>
           </div>
           <a
-            href={`mailto:${PHOTOGRAPHER_EMAIL}`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PHOTOGRAPHER_EMAIL}`}
             className="contact-cta"
+            target='_blank'
             onClick={(e) => e.stopPropagation()}
             onMouseEnter={handleHoverStart}
             onMouseLeave={handleHoverEnd}
