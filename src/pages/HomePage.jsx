@@ -43,14 +43,14 @@ const PORTRAIT_IMAGES = [
 
 const FOOD_IMAGES = [
   { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/1.jpg', title: 'The Perfect Stack', cuisine: 'American Nuggets' },
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/4.jpg', title: 'Pasta Poetry', cuisine: 'Italian Fine Dining' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/5.jpg', title: 'Culinary Canvas', cuisine: 'Modern Fusion' },
-  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/10.jpg', title: 'Garden Fresh', cuisine: 'Farm to Table' },
-  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/2.jpg', title: 'Artisan Craft', cuisine: 'Artisan Pizza' },
-  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
-  { id: 7, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
-  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/11.jpg', title: 'Morning Ritual', cuisine: 'Breakfast Art' },
+  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/4.jpg', title: 'Smoke & Spice', cuisine: 'Mughal-Era Indian' },
+  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/5.jpg', title: 'Old World Sausage', cuisine: 'Central European' },
+  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/12.jpg', title: 'Golden Simmer', cuisine: 'Traditional Indian' },
+  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/2.jpg', title: 'Island Chill', cuisine: 'Contemporary Cocktail' },
+  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Sicilian Pistachio', cuisine: 'Italian (Sicilian)' },
+  { id: 7, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg', title: 'Tandoor Glow', cuisine: 'Indian Subcontinental' },
+  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg', title: 'Chocolate Cascade', cuisine: 'Luxury Dessert' },
+  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/11.jpg', title: 'Sea & Soy', cuisine: 'Asian Fusion' },
 ];
 
 const STATS_DATA = [
