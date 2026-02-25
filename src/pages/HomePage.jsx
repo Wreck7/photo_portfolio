@@ -1,70 +1,202 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import '@/styles/cinematic.css';
-import { ArrowRight } from 'lucide-react';
+import React, { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@/styles/cinematic.css";
+import { ArrowRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Data defined directly in component file (same as original)
-const PHOTOGRAPHER_NAME = 'Vishnu';
-const PHOTOGRAPHER_TAGLINE = 'Capturing spaces, faces, and flavors.';
-const PHOTOGRAPHER_EMAIL = 'gandhamvishnu296@gmail.com';
-const PHOTOGRAPHER_PHONE = '+91 96762 38293';
-const PHOTOGRAPHER_INSTAGRAM = '@vb_photozz';
-const PHOTOGRAPHER_LOCATION = 'Hyderabad, Telangana';
+const PHOTOGRAPHER_NAME = "Vishnu";
+const PHOTOGRAPHER_TAGLINE = "Capturing spaces, faces, and flavors.";
+const PHOTOGRAPHER_EMAIL = "gandhamvishnu296@gmail.com";
+const PHOTOGRAPHER_PHONE = "+91 96762 38293";
+const PHOTOGRAPHER_INSTAGRAM = "@vb_photozz";
+const PHOTOGRAPHER_LOCATION = "Hyderabad, Telangana";
 const PHOTOGRAPHER_BIO = [
   "With over three years of experience behind the lens, I've dedicated my career to capturing the extraordinary in the ordinary. My journey began in the narrow streets of old cities, where I learned that every corner holds a story waiting to be told.",
   "I specialize in three distinct worlds: the geometric poetry of architecture, the raw emotion of human portraits, and the sensory art of culinary photography. Each frame I capture is a meditation on light, shadow, and the fleeting moments that define our existence.",
-  "Over the years, my work has been shared on various creative platforms, but what truly matters to me isn’t the recognition it’s the process. I’m constantly chasing that moment when everything feels right, when light, subject, and emotion come together naturally to tell a story that feels real and timeless."
+  "Over the years, my work has been shared on various creative platforms, but what truly matters to me isn’t the recognition it’s the process. I’m constantly chasing that moment when everything feels right, when light, subject, and emotion come together naturally to tell a story that feels real and timeless.",
 ];
 
-const HERO_IMAGE = "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg"
-const ABOUT_IMAGE = 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/vishnu_pic.jpeg';
+const HERO_IMAGE =
+  "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg";
+const ABOUT_IMAGE =
+  "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/vishnu_pic.jpeg";
 
 const ARCHITECTURE_IMAGES = [
-  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg', title: 'Timber & Tone', location: 'Hyderabad, India' },
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg', title: 'Urban Minimalism', location: 'Hyderabad, India' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg', title: 'NatureCraft Interiors', location: 'Hyderabad, India' },
-  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg', title: 'Brick & White', location: 'Hyderabad, India' },
-  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg', title: 'Lofted in White', location: 'Hyderabad, India' },
-  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg', title: 'Concrete Dreams', location: 'Hyderabad, India' },
-  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg', title: 'Steel & Glass', location: 'Hyderabad, India' },
-  { id: 10, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/7.jpg', title: 'Charcoal Brick Haven', location: 'Hyderabad, India' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg', title: 'The Teak Atelier', location: 'Hyderabad, India' },
+  {
+    id: 1,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg",
+    title: "Timber & Tone",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 2,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg",
+    title: "Urban Minimalism",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 3,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg",
+    title: "NatureCraft Interiors",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 4,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg",
+    title: "Brick & White",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 5,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg",
+    title: "Lofted in White",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 6,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg",
+    title: "Concrete Dreams",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 8,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg",
+    title: "Steel & Glass",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 10,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/7.jpg",
+    title: "Charcoal Brick Haven",
+    location: "Hyderabad, India",
+  },
+  {
+    id: 9,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg",
+    title: "The Teak Atelier",
+    location: "Hyderabad, India",
+  },
 ];
 
 const PORTRAIT_IMAGES = [
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg', title: 'Studio Light', subject: 'Iron Physique' },
-  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/1.jpg', title: 'Serene Grace', subject: 'Editorial Portrait' },
-  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/4.jpg', title: 'Azure Depths', subject: 'Beauty Portrait' },
-  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/5.jpg', title: 'Raw Character', subject: 'Character Study' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg', title: 'Golden Hour', subject: 'Soft Neutrals' },
+  {
+    id: 2,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg",
+    title: "Studio Light",
+    subject: "Iron Physique",
+  },
+  {
+    id: 1,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/1.jpg",
+    title: "Serene Grace",
+    subject: "Editorial Portrait",
+  },
+  {
+    id: 4,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/4.jpg",
+    title: "Azure Depths",
+    subject: "Beauty Portrait",
+  },
+  {
+    id: 5,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/5.jpg",
+    title: "Raw Character",
+    subject: "Character Study",
+  },
+  {
+    id: 3,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg",
+    title: "Golden Hour",
+    subject: "Soft Neutrals",
+  },
 ];
 
 const FOOD_IMAGES = [
-  { id: 1, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/1.jpg', title: 'The Perfect Stack', cuisine: 'American Nuggets' },
-  { id: 2, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/4.jpg', title: 'Smoke & Spice', cuisine: 'Mughal-Era Indian' },
-  { id: 3, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/5.jpg', title: 'Old World Sausage', cuisine: 'Central European' },
-  { id: 4, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/12.jpg', title: 'Golden Simmer', cuisine: 'Traditional Indian' },
-  { id: 5, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/2.jpg', title: 'Island Chill', cuisine: 'Contemporary Cocktail' },
-  { id: 6, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg', title: 'Sicilian Pistachio', cuisine: 'Italian (Sicilian)' },
-  { id: 7, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg', title: 'Tandoor Glow', cuisine: 'Indian Subcontinental' },
-  { id: 8, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg', title: 'Chocolate Cascade', cuisine: 'Luxury Dessert' },
-  { id: 9, url: 'https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/11.jpg', title: 'Sea & Soy', cuisine: 'Asian Fusion' },
+  {
+    id: 1,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/1.jpg",
+    title: "The Perfect Stack",
+    cuisine: "American Nuggets",
+  },
+  {
+    id: 2,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/4.jpg",
+    title: "Smoke & Spice",
+    cuisine: "Mughal-Era Indian",
+  },
+  {
+    id: 3,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/5.jpg",
+    title: "Old World Sausage",
+    cuisine: "Central European",
+  },
+  {
+    id: 4,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/12.jpg",
+    title: "Golden Simmer",
+    cuisine: "Traditional Indian",
+  },
+  {
+    id: 5,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/2.jpg",
+    title: "Island Chill",
+    cuisine: "Contemporary Cocktail",
+  },
+  {
+    id: 6,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/3.jpg",
+    title: "Sicilian Pistachio",
+    cuisine: "Italian (Sicilian)",
+  },
+  {
+    id: 7,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/6.jpg",
+    title: "Tandoor Glow",
+    cuisine: "Indian Subcontinental",
+  },
+  {
+    id: 8,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/7.jpg",
+    title: "Chocolate Cascade",
+    cuisine: "Luxury Dessert",
+  },
+  {
+    id: 9,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Food/11.jpg",
+    title: "Sea & Soy",
+    cuisine: "Asian Fusion",
+  },
 ];
 
 const STATS_DATA = [
-  { number: '500+', label: 'Projects Completed' },
-  { number: '12', label: 'Years Experience' },
-  { number: '50+', label: 'Awards Won' },
-  { number: '200+', label: 'Happy Clients' }
+  { number: "500+", label: "Projects Completed" },
+  { number: "12", label: "Years Experience" },
+  { number: "50+", label: "Awards Won" },
+  { number: "200+", label: "Happy Clients" },
 ];
 
 const TESTIMONIALS_DATA = [
-  { quote: "Vishnu's architectural photography transformed our brand identity. His eye for geometric perfection is unmatched.", author: 'Sarah Chen', role: 'Creative Director, Foster + Partners' },
-  { quote: "Working with Vishnu was a revelation. He captures not just images, but emotions frozen in time.", author: 'Marcus Webb', role: 'Editor-in-Chief, Vogue Living' },
-  { quote: "The food photography Vishnu created for our restaurant became art that our guests couldn't stop talking about.", author: 'Elena Rodriguez', role: 'Owner, Maison Lumière' }
+  {
+    quote:
+      "Vishnu's architectural photography transformed our brand identity. His eye for geometric perfection is unmatched.",
+    author: "Sarah Chen",
+    role: "Creative Director, Foster + Partners",
+  },
+  {
+    quote:
+      "Working with Vishnu was a revelation. He captures not just images, but emotions frozen in time.",
+    author: "Marcus Webb",
+    role: "Editor-in-Chief, Vogue Living",
+  },
+  {
+    quote:
+      "The food photography Vishnu created for our restaurant became art that our guests couldn't stop talking about.",
+    author: "Elena Rodriguez",
+    role: "Owner, Maison Lumière",
+  },
 ];
 
 function GridItem({ image, metaKey, onHoverStart, onHoverEnd }) {
@@ -107,6 +239,20 @@ export default function HomePage() {
   const [cursorX, setCursorX] = useState(0);
   const [cursorY, setCursorY] = useState(0);
   const [cursorHover, setCursorHover] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(PHOTOGRAPHER_PHONE);
+      setCopied(true);
+
+      setTimeout(() => {
+        setCopied(false);
+      }, 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
 
   const mainRef = useRef(null);
   const heroRef = useRef(null);
@@ -123,8 +269,8 @@ export default function HomePage() {
       setCursorX(e.clientX - 10);
       setCursorY(e.clientY - 10);
     }
-    window.addEventListener('mousemove', handleMove);
-    return () => window.removeEventListener('mousemove', handleMove);
+    window.addEventListener("mousemove", handleMove);
+    return () => window.removeEventListener("mousemove", handleMove);
   }, []);
 
   useEffect(() => {
@@ -138,70 +284,133 @@ export default function HomePage() {
     const ctx = gsap.context(() => {
       gsap
         .timeline()
-        .to('.hero-bg', { scale: 1, duration: 2, ease: 'power3.out' })
-        .to('.hero-title .char', { opacity: 1, y: 0, duration: 0.8, stagger: 0.05, ease: 'power3.out' }, '-=1.5')
-        .to('.hero-tagline', { opacity: 1, filter: 'blur(0px)', duration: 1.2, ease: 'power2.out' }, '-=0.5')
-        .to('.hero-scroll-indicator', { opacity: 1, duration: 1, ease: 'power2.out' }, '-=0.3');
+        .to(".hero-bg", { scale: 1, duration: 2, ease: "power3.out" })
+        .to(
+          ".hero-title .char",
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.05,
+            ease: "power3.out",
+          },
+          "-=1.5",
+        )
+        .to(
+          ".hero-tagline",
+          {
+            opacity: 1,
+            filter: "blur(0px)",
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "-=0.5",
+        )
+        .to(
+          ".hero-scroll-indicator",
+          { opacity: 1, duration: 1, ease: "power2.out" },
+          "-=0.3",
+        );
 
-      gsap.to('.hero-bg', {
+      gsap.to(".hero-bg", {
         yPercent: 30,
-        ease: 'none',
-        scrollTrigger: { trigger: heroRef.current, start: 'top top', end: 'bottom top', scrub: true }
+        ease: "none",
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
       });
 
-      gsap.from('.arch-header', {
-        opacity: 0, y: 60, duration: 1,
-        scrollTrigger: { trigger: archRef.current, start: 'top 70%' }
+      gsap.from(".arch-header", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        scrollTrigger: { trigger: archRef.current, start: "top 70%" },
       });
-      gsap.from('.arch-grid .grid-item', {
-        opacity: 0, scale: 0.8, rotateY: 15, duration: 1, stagger: 0.15,
-        scrollTrigger: { trigger: '.arch-grid', start: 'top 70%' }
-      });
-
-      gsap.from('.port-header', {
-        opacity: 0, y: 60, duration: 1,
-        scrollTrigger: { trigger: portRef.current, start: 'top 70%' }
-      });
-      gsap.from('.port-grid .grid-item', {
-        opacity: 0, filter: 'blur(20px)', y: 80, duration: 1.2, stagger: 0.15,
-        scrollTrigger: { trigger: '.port-grid', start: 'top 70%' }
+      gsap.from(".arch-grid .grid-item", {
+        opacity: 0,
+        scale: 0.8,
+        rotateY: 15,
+        duration: 1,
+        stagger: 0.15,
+        scrollTrigger: { trigger: ".arch-grid", start: "top 70%" },
       });
 
-      gsap.from('.food-header', {
-        opacity: 0, y: 60, duration: 1,
-        scrollTrigger: { trigger: foodRef.current, start: 'top 70%' }
+      gsap.from(".port-header", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        scrollTrigger: { trigger: portRef.current, start: "top 70%" },
       });
-      gsap.to('.food-grid .grid-item', {
-        opacity: 1, y: 0, rotate: 0, duration: 0.8, stagger: 0.1, ease: 'back.out(1.7)',
-        scrollTrigger: { trigger: '.food-grid', start: 'top 70%' }
-      });
-
-      gsap.from('.about-image-wrapper', {
-        opacity: 0, x: -100, duration: 1.2,
-        scrollTrigger: { trigger: aboutRef.current, start: 'top 60%' }
-      });
-      gsap.from('.about-content > *', {
-        opacity: 0, y: 40, duration: 1, stagger: 0.2,
-        scrollTrigger: { trigger: aboutRef.current, start: 'top 60%' }
+      gsap.from(".port-grid .grid-item", {
+        opacity: 0,
+        filter: "blur(20px)",
+        y: 80,
+        duration: 1.2,
+        stagger: 0.15,
+        scrollTrigger: { trigger: ".port-grid", start: "top 70%" },
       });
 
-      gsap.to('.stat-item', {
-        opacity: 1, y: 0, duration: 0.8, stagger: 0.15,
-        scrollTrigger: { trigger: statsRef.current, start: 'top 70%' }
+      gsap.from(".food-header", {
+        opacity: 0,
+        y: 60,
+        duration: 1,
+        scrollTrigger: { trigger: foodRef.current, start: "top 70%" },
+      });
+      gsap.to(".food-grid .grid-item", {
+        opacity: 1,
+        y: 0,
+        rotate: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "back.out(1.7)",
+        scrollTrigger: { trigger: ".food-grid", start: "top 70%" },
       });
 
-      gsap.to('.testimonial-card', {
-        opacity: 1, y: 0, duration: 1, stagger: 0.2,
-        scrollTrigger: { trigger: testRef.current, start: 'top 60%' }
+      gsap.from(".about-image-wrapper", {
+        opacity: 0,
+        x: -100,
+        duration: 1.2,
+        scrollTrigger: { trigger: aboutRef.current, start: "top 60%" },
+      });
+      gsap.from(".about-content > *", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: { trigger: aboutRef.current, start: "top 60%" },
       });
 
-      gsap.to('.contact-spotlight', {
-        opacity: 1, scale: 1.2, duration: 2,
-        scrollTrigger: { trigger: contactRef.current, start: 'top 60%' }
+      gsap.to(".stat-item", {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.15,
+        scrollTrigger: { trigger: statsRef.current, start: "top 70%" },
       });
-      gsap.to('.contact-content > *', {
-        opacity: 1, y: 0, duration: 1, stagger: 0.15,
-        scrollTrigger: { trigger: contactRef.current, start: 'top 50%' }
+
+      gsap.to(".testimonial-card", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: { trigger: testRef.current, start: "top 60%" },
+      });
+
+      gsap.to(".contact-spotlight", {
+        opacity: 1,
+        scale: 1.2,
+        duration: 2,
+        scrollTrigger: { trigger: contactRef.current, start: "top 60%" },
+      });
+      gsap.to(".contact-content > *", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.15,
+        scrollTrigger: { trigger: contactRef.current, start: "top 50%" },
       });
     }, mainRef);
 
@@ -215,7 +424,12 @@ export default function HomePage() {
     return (
       <div className="page-loader">
         <div className="loader-text">
-          <span>V</span><span>I</span><span>S</span><span>H</span><span>N</span><span>U</span>
+          <span>V</span>
+          <span>I</span>
+          <span>S</span>
+          <span>H</span>
+          <span>N</span>
+          <span>U</span>
         </div>
       </div>
     );
@@ -225,23 +439,38 @@ export default function HomePage() {
     <div className="cinematic-portfolio" ref={mainRef}>
       <div className="film-grain" />
       <div
-        className={`custom-cursor ${cursorHover ? 'hover' : ''}`}
+        className={`custom-cursor ${cursorHover ? "hover" : ""}`}
         style={{ left: cursorX, top: cursorY }}
       />
 
       <nav className="nav-cinematic">
-        <a href="#" className="nav-logo">VISHNU</a>
+        <a href="#" className="nav-logo">
+          VISHNU
+        </a>
         <ul className="nav-links">
-          <li><a href="#architecture">Architecture</a></li>
-          <li><a href="#portrait">Portrait</a></li>
-          <li><a href="#food">Food</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#architecture">Architecture</a>
+          </li>
+          <li>
+            <a href="#portrait">Portrait</a>
+          </li>
+          <li>
+            <a href="#food">Food</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
 
       <section className="hero-section" ref={heroRef}>
-        <div className="hero-bg" style={{ backgroundImage: `url(${HERO_IMAGE})` }} />
+        <div
+          className="hero-bg"
+          style={{ backgroundImage: `url(${HERO_IMAGE})` }}
+        />
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1 className="hero-title">
@@ -268,7 +497,13 @@ export default function HomePage() {
         </div>
         <div className="image-grid architecture arch-grid">
           {ARCHITECTURE_IMAGES.map((img) => (
-            <GridItem key={img.id} image={img} metaKey="location" onHoverStart={handleHoverStart} onHoverEnd={handleHoverEnd} />
+            <GridItem
+              key={img.id}
+              image={img}
+              metaKey="location"
+              onHoverStart={handleHoverStart}
+              onHoverEnd={handleHoverEnd}
+            />
           ))}
         </div>
       </section>
@@ -281,7 +516,13 @@ export default function HomePage() {
         </div>
         <div className="image-grid portrait port-grid">
           {PORTRAIT_IMAGES.map((img) => (
-            <GridItem key={img.id} image={img} metaKey="subject" onHoverStart={handleHoverStart} onHoverEnd={handleHoverEnd} />
+            <GridItem
+              key={img.id}
+              image={img}
+              metaKey="subject"
+              onHoverStart={handleHoverStart}
+              onHoverEnd={handleHoverEnd}
+            />
           ))}
         </div>
       </section>
@@ -294,7 +535,13 @@ export default function HomePage() {
         </div>
         <div className="image-grid food food-grid">
           {FOOD_IMAGES.map((img) => (
-            <GridItem key={img.id} image={img} metaKey="cuisine" onHoverStart={handleHoverStart} onHoverEnd={handleHoverEnd} />
+            <GridItem
+              key={img.id}
+              image={img}
+              metaKey="cuisine"
+              onHoverStart={handleHoverStart}
+              onHoverEnd={handleHoverEnd}
+            />
           ))}
         </div>
       </section>
@@ -302,14 +549,20 @@ export default function HomePage() {
       <section className="about-section" id="about" ref={aboutRef}>
         <div className="about-container">
           <div className="about-image-wrapper">
-            <img src={ABOUT_IMAGE} alt="Vishnu - Photographer" className="about-image" />
+            <img
+              src={ABOUT_IMAGE}
+              alt="Vishnu - Photographer"
+              className="about-image"
+            />
             <div className="about-image-frame" />
           </div>
           <div className="about-content">
             <span className="about-label">About the Artist</span>
             <h2 className="about-title">The Vision Behind the Lens</h2>
             <div className="about-bio">
-              {PHOTOGRAPHER_BIO.map((para, i) => <p key={i}>{para}</p>)}
+              {PHOTOGRAPHER_BIO.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
             <div className="about-signature">{PHOTOGRAPHER_NAME}</div>
           </div>
@@ -339,28 +592,44 @@ export default function HomePage() {
         <div className="contact-spotlight" />
         <div className="contact-container contact-content">
           <span className="contact-label">Get in Touch</span>
-          <h2 className="contact-title">Let&apos;s Create<br />Something Beautiful</h2>
-          <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PHOTOGRAPHER_EMAIL}`} target='_blank' className="contact-email">{PHOTOGRAPHER_EMAIL}</a>
+          <h2 className="contact-title">
+            Let&apos;s Create
+            <br />
+            Something Beautiful
+          </h2>
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PHOTOGRAPHER_EMAIL}`}
+            target="_blank"
+            className="contact-email"
+          >
+            {PHOTOGRAPHER_EMAIL}
+          </a>
           <div className="contact-details">
-            <div className="contact-detail">
+            <div className="contact-detail" onClick={handleCopy}  style={{ cursor: "pointer" }}>
               <p className="contact-detail-label">Phone</p>
-              <p className="contact-detail-value">{PHOTOGRAPHER_PHONE}</p>
+              <p className="contact-detail-value">
+                {copied ? "Copied!" : PHOTOGRAPHER_PHONE}
+              </p>
             </div>
             <div className="contact-detail">
               <p className="contact-detail-label">Location</p>
               <p className="contact-detail-value">{PHOTOGRAPHER_LOCATION}</p>
             </div>
-            <a href="https://www.instagram.com/vb_photozz/" target='_blank' className='anchor'>
+            <a
+              href="https://www.instagram.com/vb_photozz/"
+              target="_blank"
+              className="anchor"
+            >
               <div className="contact-detail">
-              <p className="contact-detail-label">Instagram</p>
-              <p className="contact-detail-value">{PHOTOGRAPHER_INSTAGRAM}</p>
-            </div>
+                <p className="contact-detail-label">Instagram</p>
+                <p className="contact-detail-value">{PHOTOGRAPHER_INSTAGRAM}</p>
+              </div>
             </a>
           </div>
           <a
             href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PHOTOGRAPHER_EMAIL}`}
             className="contact-cta"
-            target='_blank'
+            target="_blank"
             onClick={(e) => e.stopPropagation()}
             onMouseEnter={handleHoverStart}
             onMouseLeave={handleHoverEnd}
@@ -373,10 +642,16 @@ export default function HomePage() {
       <footer className="footer-cinematic">
         <div className="footer-content">
           <div className="footer-logo">VISHNU</div>
-          <p className="footer-copyright">© 2026 Vishnu Photography. All rights reserved.</p>
+          <p className="footer-copyright">
+            © 2026 Vishnu Photography. All rights reserved.
+          </p>
           <div className="footer-social">
-            <a href="https://www.instagram.com/vb_photozz/" target='_blank'>Instagram</a>
-            <a href="https://www.behance.net/vbphotography1" target='_blank'>Behance</a>
+            <a href="https://www.instagram.com/vb_photozz/" target="_blank">
+              Instagram
+            </a>
+            <a href="https://www.behance.net/vbphotography1" target="_blank">
+              Behance
+            </a>
             {/* <a href="#">LinkedIn</a> */}
           </div>
         </div>
