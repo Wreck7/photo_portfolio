@@ -84,31 +84,31 @@ const ARCHITECTURE_IMAGES = [
 const PORTRAIT_IMAGES = [
   {
     id: 2,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/2.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/faces_images/2.avif",
     title: "Studio Light",
     subject: "Iron Physique",
   },
   {
     id: 1,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/1.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/faces_images/1.avif",
     title: "Serene Grace",
     subject: "Editorial Portrait",
   },
   {
     id: 4,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/4.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/faces_images/4.avif",
     title: "Azure Depths",
     subject: "Beauty Portrait",
   },
   {
     id: 5,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/5.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/faces_images/5.avif",
     title: "Raw Character",
     subject: "Character Study",
   },
   {
     id: 3,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Faces/3.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/faces_images/3.avif",
     title: "Golden Hour",
     subject: "Soft Neutrals",
   },
