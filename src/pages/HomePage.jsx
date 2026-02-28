@@ -20,62 +20,62 @@ const PHOTOGRAPHER_BIO = [
 ];
 
 const HERO_IMAGE =
-  "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/10.jpg";
+  "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/10.avif";
 const ABOUT_IMAGE =
   "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/vishnu_pic.jpeg";
 
 const ARCHITECTURE_IMAGES = [
   {
     id: 1,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/1.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/1.avif",
     title: "Timber & Tone",
     location: "Hyderabad, India",
   },
   {
     id: 2,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/2.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/2.avif",
     title: "Urban Minimalism",
     location: "Hyderabad, India",
   },
   {
     id: 3,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/3.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/3.avif",
     title: "NatureCraft Interiors",
     location: "Hyderabad, India",
   },
   {
     id: 4,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/4.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/4.avif",
     title: "Brick & White",
     location: "Hyderabad, India",
   },
   {
     id: 5,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/5.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/5.avif",
     title: "Lofted in White",
     location: "Hyderabad, India",
   },
   {
     id: 6,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/6.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/6.avif",
     title: "Concrete Dreams",
     location: "Hyderabad, India",
   },
   {
     id: 8,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/8.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/8.avif",
     title: "Steel & Glass",
     location: "Hyderabad, India",
   },
   {
     id: 10,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/7.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/7.avif",
     title: "Charcoal Brick Haven",
     location: "Hyderabad, India",
   },
   {
     id: 9,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/Arch/9.jpg",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/arch_images/9.avif",
     title: "The Teak Atelier",
     location: "Hyderabad, India",
   },
