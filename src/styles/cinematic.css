@@ -767,6 +767,10 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .custom-cursor {
+    display: none !important;
+  }
+
   .nav-cinematic {
     padding: 1.5rem 2rem;
   }

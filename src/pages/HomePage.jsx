@@ -265,6 +265,9 @@ export default function HomePage() {
   const contactRef = useRef(null);
 
   useEffect(() => {
+    const isSmallScreen = window.matchMedia("(max-width: 1024px)").matches;
+    if (isSmallScreen) return;
+
     function handleMove(e) {
       setCursorX(e.clientX - 10);
       setCursorY(e.clientY - 10);
@@ -605,7 +608,7 @@ export default function HomePage() {
             {PHOTOGRAPHER_EMAIL}
           </a>
           <div className="contact-details">
-            <div className="contact-detail" onClick={handleCopy}  style={{ cursor: "pointer" }}>
+            <div className="contact-detail" onClick={handleCopy} style={{ cursor: "pointer" }}>
               <p className="contact-detail-label">Phone</p>
               <p className="contact-detail-value">
                 {copied ? "Copied!" : PHOTOGRAPHER_PHONE}
