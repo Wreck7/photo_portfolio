@@ -165,9 +165,15 @@ const FOOD_IMAGES = [
   },
   {
     id: 9,
-    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/food_images/11.avif",
-    title: "Sea & Soy",
-    cuisine: "Asian Fusion",
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/food_images/14.avif",
+    title: "Rustic Refreshment",
+    cuisine: "Terracotta Drinks",
+  },
+  {
+    id: 10,
+    url: "https://cdn.jsdelivr.net/gh/gandhamvishnu-VB/Portfolio_images/food_images/13.avif",
+    title: "Protein Pancakes",
+    cuisine: "Strawberry Stack",
   },
 ];
 
